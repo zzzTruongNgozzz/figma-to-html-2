@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Khôi phục cỡ chữ mặc định theo rem */
@@ -40,6 +41,13 @@ a {
   opacity: 0.8;
 }
 
+.heading-lv2,
+.heading-lv2 a {
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.33;
+}
 /* =========== HEADER ====================================================================== */
 .header {
   background-color: #fff;
@@ -135,6 +143,12 @@ a {
   color: #767e7e;
   font-size: 1.4rem;
   font-weight: 400;
+}
+
+.hero .content-block .top-title-lv2 {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .hero .content-block .title {
@@ -259,8 +273,8 @@ a {
 }
 
 .hero .media-block .schedules-icon {
-  margin: 16px 25px 0;
   display: block;
+  margin: 16px 25px 0;
   width: 74px;
   height: 6px;
   border-radius: 3px;
@@ -332,4 +346,60 @@ a {
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* ============== FEATURES =========================================================================== */
+.feature {
+  margin-top: 70px;
+}
+.feature .body-feature {
+  max-width: 1024px;
+  padding: 60px 0;
+}
+
+.feature .heading-lv2 {
+  margin-top: 18px;
+  max-width: 577px;
+}
+
+.feature .desc {
+  max-width: 590px;
+  margin-top: 18px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+.feature .feature-list {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature .feature-list .item-title {
+  margin-top: 26px;
+}
+.feature .feature-list .item-title a {
+  color: #0d1111;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.feature .item .item-desc {
+  margin-top: 16px;
+  color: #9da6a5;
+  font-size: 1.6rem;
+  line-height: 1.69;
+}
+
+.feature .item:first-child .item-desc {
+  max-width: 168px;
+}
+
+.feature .item:nth-child(2) .item-desc {
+  max-width: 223px;
+}
+
+.feature .item:nth-child(3) .item-desc {
+  max-width: 224px;
 }
