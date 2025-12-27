@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Khôi phục cỡ chữ mặc định theo rem */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============ BASE ======================================================================= */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========== HEADER ====================================================================== */
+.header {
+  background-color: #fff;
+}
+
+.header .fixed {
+  position: sticky;
+  top: -44px;
+  z-index: 1;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 52px 0 8px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  padding: 8px 19.5px;
+  color: #2f3a3b;
+  font-weight: 400;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  display: block;
+  left: 19.5px;
+  bottom: 6px;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #2f3a3b;
+}
+
+.action .action-link,
+.nav li.active a,
+.nav a:hover {
+  color: #2f3a3b;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.action .action-link {
+  margin-left: 157.5px;
+  color: #494949;
+  text-align: center;
+  font-weight: 400;
+}
+
+.action .action-btn {
+  display: inline-block;
+  min-width: 108px;
+  line-height: 46px;
+  margin-left: 24px;
+  padding: 0 16px;
+  text-align: center;
+  font-weight: 600;
+  color: #1ebfc1;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+}
+
+.action .action-btn:hover {
+  background: #1ebfc1;
+  color: white;
+  transition: 0.3s;
+}
